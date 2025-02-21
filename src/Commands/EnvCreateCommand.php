@@ -95,6 +95,8 @@ class EnvCreateCommand extends BuildToolsBase
             // create the multidev environment, and then push the code.
             $this->create($site_env_id, $multidev);
             $doNotify = true;
+            sleep(120);
+            // waitForWorkflow($startTime, $site, $env_name);
         }
 
         $metadata = $this->pushCodeToPantheon($site_env_id, $multidev, '', $env_label, $options['message'], $options['no-git-force']);
