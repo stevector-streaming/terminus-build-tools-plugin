@@ -96,7 +96,7 @@ class EnvCreateCommand extends BuildToolsBase
             $this->log()->notice('--------------------------------------this is from a fork -------------------------------------');
             $this->create($site_env_id, $multidev);
             $doNotify = true;
-            sleep(120);
+            sleep(300);
             // waitForWorkflow($startTime, $site, $env_name);
         }
 
