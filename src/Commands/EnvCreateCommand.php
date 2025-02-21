@@ -128,7 +128,7 @@ class EnvCreateCommand extends BuildToolsBase
             // sleep(60);            
 
             $this->waitForWorkflow(time(), $site, $env);
-            // waitForWorkflow($startTime, $site, $env_name);
+            // waitForWorkflow($startTime, $site, $multidev);
         }
 
         $metadata = $this->pushCodeToPantheon($site_env_id, $multidev, '', $env_label, $options['message'], $options['no-git-force']);
