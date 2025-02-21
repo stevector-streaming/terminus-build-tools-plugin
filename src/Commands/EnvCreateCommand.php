@@ -129,7 +129,7 @@ class EnvCreateCommand extends BuildToolsBase
 
 
             $this->log()->notice('--------------------------------------WAIT -------------------------------------');
-            $this->waitForWorkflow(time(), $site, $env);
+            $this->waitForWorkflow(time(), $site, $multidev);
             // waitForWorkflow($startTime, $site, $multidev);
         }
 
