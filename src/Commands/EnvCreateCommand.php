@@ -93,6 +93,7 @@ class EnvCreateCommand extends BuildToolsBase
             // will not be applied unless we push our change.
             // To allow pantheon.yml to be processed, we will
             // create the multidev environment, and then push the code.
+            $this->log()->notice('--------------------------------------this is from a fork -------------------------------------');
             $this->create($site_env_id, $multidev);
             $doNotify = true;
             sleep(120);
